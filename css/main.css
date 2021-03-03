@@ -469,6 +469,8 @@ ul.labeled-icons li h3 {
     text-align: center;
     background-color:#181725;
     display:block;
+    align-self: flex-end;
+  
 }
 
 #footer .icons {
