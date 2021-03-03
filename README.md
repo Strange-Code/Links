@@ -1,4 +1,4 @@
-## PORTAL DE LINKS :alien:
+## PORTAL DE LINKS :link:
 
    Es un portal responsive el cual tiene como objetivo ser una puerta de enlace a otras redes.
 
