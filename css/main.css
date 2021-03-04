@@ -459,6 +459,19 @@ ul.labeled-icons li h3 {
     background-color: #000000;
 }
 
+@media screen and (max-width: 980px) {
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: calc(100% - 3em);
+    }
+}
+
 
 
 /* Footer */
