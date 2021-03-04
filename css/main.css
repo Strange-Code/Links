@@ -444,7 +444,7 @@ ul.labeled-icons li h3 {
 /* Container */
 
 .container {
-    margin: 0 auto;
+    margin: 1em auto;
     text-align: center;
     width: 100%;
     max-width: calc(100% - 20%);
