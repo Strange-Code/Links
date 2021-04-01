@@ -1,88 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
-
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -133,12 +51,12 @@ a {
     -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     text-decoration: none !important;
-    
 }
 
 body {
     -webkit-text-size-adjust: none;
 }
+
 
 /* Basic */
 
@@ -150,10 +68,6 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-}
-
-body {
-    background: #1C46F2;
 }
 
 body.is-preload *,
@@ -179,7 +93,6 @@ textarea {
     font-weight: 400;
     line-height: 1.75em;
 }
-
 
 strong,
 b {
@@ -274,30 +187,6 @@ blockquote {
     padding: 0.5em 0 0.5em 1.5em;
 }
 
-code {
-    background: #f7f7f7;
-    border-radius: 0.35em;
-    border: solid 2px #efefef;
-    font-family: "Courier New", monospace;
-    font-size: 0.9em;
-    margin: 0 0.25em;
-    padding: 0.25em 0.65em;
-}
-
-pre {
-    -webkit-overflow-scrolling: touch;
-    font-family: "Courier New", monospace;
-    font-size: 0.9em;
-    margin: 0 0 2em 0;
-}
-
-pre code {
-    display: block;
-    line-height: 1.75em;
-    padding: 1em 1.5em;
-    overflow-x: auto;
-}
-
 .align-left {
     text-align: left;
 }
@@ -309,6 +198,7 @@ pre code {
 .align-right {
     text-align: right;
 }
+
 
 /* Icon */
 
@@ -346,7 +236,6 @@ pre code {
 .icon.brands:before {
     font-family: 'Font Awesome 5 Brands';
 }
-
 
 
 /* Icons */
@@ -402,30 +291,49 @@ ul.labeled-icons li h3 {
     width: 1em;
 }
 
+
 /*Configurar*/
+
+body {
+    background: linear-gradient(to bottom right, #9EED72, #6AEBC3);
+}
+
+.title {
+    color: #171717;
+}
+
 
 /* Header */
 
-#header{
-    margin: 0;
-    float:inline-start;
-    text-align: left;
-    background-color:#181725;
-    display:block;
+.logo {
+    margin-left: 25%;
+    width: 50%;
+    display: block;
 }
 
-#header h1{
+
+/* Header */
+
+#header {
+    margin: 0;
+    float: inline-start;
+    text-align: left;
+    background-color: #171717;
+    display: block;
+}
+
+#header h1 {
     font-size: 1em;
     padding: 0.7em;
 }
+
 
 /* Main */
 
 #main {
     margin-left: 10%;
     max-width: 100em;
-    padding: 2em 4em 4em 4em;
-    margin-top: 5em;
+    padding: 0em 4em 4em;
     width: calc(100% - 20%);
 }
 
@@ -441,6 +349,7 @@ ul.labeled-icons li h3 {
     padding-top: 0;
 }
 
+
 /* Container */
 
 .container {
@@ -451,11 +360,18 @@ ul.labeled-icons li h3 {
 }
 
 .container li {
-    background-color: #181725;
-    padding: 1em;
+    width: 100%;
+    background-color: #171717;
 }
 
-.container li:hover{
+.container li a {
+    padding: 1.5em;
+    background-color: #171717;
+    color: #fff;
+    display: block;
+}
+
+.container li a:hover {
     background-color: #000000;
 }
 
@@ -473,17 +389,15 @@ ul.labeled-icons li h3 {
 }
 
 
-
 /* Footer */
 
 #footer {
     padding: 1em 1.5em;
-    float:inline-start;
+    float: inline-start;
     text-align: center;
-    background-color:#181725;
-    display:block;
+    background-color: #171717;
+    display: block;
     align-self: flex-end;
-  
 }
 
 #footer .icons {
@@ -492,21 +406,25 @@ ul.labeled-icons li h3 {
 
 #footer a {
     font-size: 0.8em;
-    margin-right:2em;
+    margin-right: 2em;
     color: rgba(255, 255, 255, 0.4);
 }
 
-a{
+a {
     color: #FEFEFE
 }
 
+
 /*Responsive*/
+
+
 /* Small */
 
 @media screen and (max-width: 736px) {
     /* Basic */
     h1 {
         font-size: 1.5em;
+        margin: 0;
     }
     h2 {
         font-size: 1.2em;
@@ -514,7 +432,11 @@ a{
     h3 {
         font-size: 1em;
     }
-
+    .logo {
+        width: 100%;
+        margin-left: 0;
+        display: block;
+    }
     /* List */
     ul.labeled-icons li {
         padding-left: 2em;
@@ -522,23 +444,20 @@ a{
     ul.labeled-icons li h3 {
         line-height: 1.75em;
     }
-
     /* Main */
     #main {
         margin: 0;
         margin-left: 10%;
         padding: 1.5em;
     }
-
     /*container*/
-    .container h1{
+    .container h1 {
         font-size: 1.4em;
     }
-
-        /*container*/
-    #footer a{
-            font-size: 0.5em;
-            display: block;
+    /*container*/
+    #footer a {
+        font-size: 0.5em;
+        display: block;
     }
 }
 
@@ -547,14 +466,12 @@ a{
 
 @media screen and (max-width: 480px) {
     /*container*/
-    .container h1{
+    .container h1 {
         font-size: 1em;
     }
-
-    .container{
+    .container {
         max-width: 100%;
     }
-
     .container li {
         font-size: 0.7em;
     }
